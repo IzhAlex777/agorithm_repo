@@ -1,0 +1,46 @@
+public class Answer {
+    static void сашабаженов(int x){
+        
+      // Введите свое решение ниже
+      String q = x.ToString();
+        char [] a = q.ToCharArray();
+
+
+       if (a[0] > a[1]) {
+        Console.WriteLine ("первое число = " + " `" + a[0] + " больше второго числа " + a[1] + "` ");
+       }
+      else if (a[0] < a[1]) {
+        Console.WriteLine ("наибольшая цифра х = " + " `" + a[0] + " и " + " y = " + a[1] + "` ");
+      }
+     else  {
+        Console.WriteLine ("равно х = " + " `" + a[0] + " и " + " y = " + a[1] + "` ");
+     }
+      
+        
+      }
+       
+       
+
+
+    
+
+
+  // Не удаляйте и не меняйте метод Main! 
+    static public void Main(string[] args) {
+        int x,y;
+
+
+        if (args.Length >= 2) {
+            x = int.Parse(args[0]);
+            y = int.Parse(args[1]);
+        } else {
+           // Здесь вы можете поменять значения для отправки кода на Выполнение
+            x = 10;
+            y = 10;
+        }
+
+
+        // Не удаляйте строки ниже
+        сашабаженов(x);
+    }
+}
